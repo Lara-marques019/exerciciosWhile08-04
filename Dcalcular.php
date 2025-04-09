@@ -16,7 +16,7 @@
         echo "<h3>🎉 Parabéns! Você acertou!</h3>";
         echo "<p>Número sorteado: <strong>$sorteado</strong></p>";
         echo "<p>Total de tentativas: <strong>$tentativas</strong></p>";
-        echo '<br><a href="index.php">Jogar novamente</a>';
+        echo '<br><a href="Dindex.php">Jogar novamente</a>';
     } else {
         $tentativas++;
         $dica = ($palpite < $sorteado) ? "maior" : "menor";
@@ -25,7 +25,7 @@
 
         // Novo formulário para continuar tentando
         echo '
-        <form action="calcular.php" method="post">
+        <form action="Dcalcular.php" method="post">
             <label>Digite outro palpite:</label><br>
             <input type="number" name="palpite" required><br><br>
 
